@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Review Requisition</title>
+    {% load static %}
+    <link rel="stylesheet" href="{% static 'css/style.css' %}" />
+  </head>
+  <body>
+    <h1>Review Requisition</h1>
+    <p>Requisition Details:</p>
+    <p>Client: {{ requisition.client.name }}</p>
+    <p>Officer: {{ requisition.officer }}</p>
+    <p>Status: {{ requisition.get_status_display }}</p>
+
+    <form action="{% url 'review_requisition' requisition.id %}" method="post">
+      {% csrf_token %}
+      <input
+        type="radio"
+        name="status"
+        value="approved"
+        id="status_approved"
+        required
+      />
+      <label for="status_approved">Approve</label>
+      <input
+        type="radio"
+        name="status"
+        value="rejected"
+        id="status_rejected"
+        required
+      />
+      <label for="status_rejected">Reject</label>
+      <input type="submit" value="Submit" />
+    </form>
+  </body>
+</html>

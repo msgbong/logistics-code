@@ -1,0 +1,113 @@
+body {
+  margin: 0;
+  padding: 0;
+  background-image: url("../images/f2.png"); /* Replace with the path to your background image */
+  background-size: cover;
+  background-position: center;
+  font-family: Arial, sans-serif;
+}
+
+#signup-container {
+  max-width: 400px;
+  margin: 100px auto;
+  background-color: rgba(
+    255,
+    255,
+    255,
+    0.7
+  ); /* Transparent white background for the form */
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+h1 {
+  text-align: center;
+  margin-bottom: 20px;
+  color: #333;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+label {
+  margin-bottom: 10px;
+  font-weight: bold;
+}
+
+input {
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  margin-bottom: 15px;
+  font-size: 16px;
+}
+
+input[type="submit"] {
+  background-color: #007bff; /* Blue color for the submit button */
+  color: #fff;
+  cursor: pointer;
+  font-size: 18px;
+}
+
+input[type="submit"]:hover {
+  background-color: #0056b3; /* Darker shade of blue on hover */
+}
+
+p {
+  text-align: center;
+  color: #faf2ae; /* Blue color for the login link */
+}
+
+a {
+  color: #ff7b00; /* Blue color for the login link */
+  text-decoration: double;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+header {
+  background-color: #007bff; /* Blue color for the header background */
+  padding: 10px;
+  color: #fff; /* White color for the header text */
+}
+
+nav ul {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+nav ul li {
+  margin-right: 20px;
+}
+
+nav ul li a {
+  color: #ebadad; /* White color for the navigation links */
+  font-size: 18px;
+}
+
+nav ul li a:hover {
+  text-decoration: overline; /* Underline on hover */
+}
+
+main {
+  padding: 20px;
+}
+
+h1 {
+  margin-bottom: 20px;
+  color: #333; /* Dark color for the heading text */
+}
+
+a {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  text-decoration: none;
+}

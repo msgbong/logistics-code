@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Create Requisition</title>
+    {% load static %}
+    <link rel="stylesheet" href="{% static 'css/style.css' %}" />
+  </head>
+  <body>
+    <h1>Create Requisition</h1>
+    <form action="{% url 'dash' %}" method="post">
+      {% csrf_token %} {{ form.as_p }}
+      <input type="submit" value="Submit" />
+    </form>
+  </body>
+</html>
